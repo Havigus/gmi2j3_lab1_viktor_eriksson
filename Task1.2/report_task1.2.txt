@@ -11,8 +11,7 @@ positional arguments:
 options:
   -h, --help            show this help message and exit as normal script:
 
-3. Html test coverage report is in the file htmlcov/index.html.
-Output of 'coverage report -m' is:
+4. Output of 'coverage report -m' is:
 
 Name                       Stmts   Miss Branch BrPart  Cover   Missing
 ----------------------------------------------------------------------
