@@ -17,6 +17,7 @@ options:
   which will test for lowercase input and should raise an error. A fix in the code to make it work would just be to 
   input.upper() the string before processing it.
 
+
 4. Coverage report from 'coverage report -m' 
 
 Name                    Stmts   Miss Branch BrPart  Cover   Missing
