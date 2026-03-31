@@ -1,0 +1,28 @@
+1. Well if you are reading this you have the source code in the same folder.
+
+2. Follow the steps below to run the code as normal script:
+usage: roman.py [-h] (--to-roman INT | --from-roman ROMAN)
+
+Convert between integers and Roman numerals
+
+options:
+  -h, --help            show this help message and exit
+  --to-roman INT        Convert integer to Roman numeral
+  --from-roman ROMAN    Convert Roman numeral to integer
+
+3. I found and added 
+    def test_lowercase(self):
+        '''from_roman should fail with lowercase input'''
+        self.assertRaises(roman.InvalidRomanNumeralError, roman.from_roman, 'mcmxcix')
+  which will test for lowercase input and should raise an error. A fix in the code to make it work would just be to 
+  input.upper() the string before processing it.
+
+4.You can see the html coverage report in the file htmlcov/index.html. The code is fully covered with tests, but the branch coverage is not 100% because of the error handling. The error handling is not tested for all possible errors, but it is tested for some of them.
+Here is also the coverage report from 'coverage report -m' 
+
+Name                    Stmts   Miss Branch BrPart  Cover   Missing
+-------------------------------------------------------------------
+Task1.1/roman.py           36      1     24      5    90%   1->2, 2->3, 3->5, 33, 43->48
+Task1.1/test_roman.py      41      0     12      0   100%
+-------------------------------------------------------------------
+TOTAL                      77      1     36      5    95%
