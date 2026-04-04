@@ -12,7 +12,7 @@ options:
   -h, --help            show this help message and exit as normal script:
 
 
-4. Output of 'coverage report -m' is:
+3. Output of 'coverage report -m' is:
 
 Name                       Stmts   Miss Branch BrPart  Cover   Missing
 ----------------------------------------------------------------------
